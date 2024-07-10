@@ -4,6 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex</title>
+    <style>
+      * {
+        border: 1px dashed;
+      }
+
+      .container {
+        mask-composite: 1300px;
+        margin: auto;
+        background-color: yellow;
+        gap: 30px;
+      }
+
+      .cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 100px;
+      }
+
+      .cards div:nth-child(1) {
+        width: 200px;
+        flex-grow: 1;
+      }
+
+      .cards div:nth-child(2) {
+        width: 200px;
+        flex-grow: 111;
+      }
+    </style>
   </head>
 
   <body>
